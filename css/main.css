@@ -1,0 +1,28 @@
+body {
+  background-color: #8310b5;
+}
+
+/*Estilos para la sección del logo*/
+
+.align-center {
+  text-align: center;
+}
+
+.map {
+  padding: 10px;
+  width: 50%;
+}
+
+h1 {
+  font-family: 'Lilita One', cursive;
+  font-size: 80px;
+  color: #fc7005;
+  padding-top: 20px;
+}
+
+h3 {
+  font-family: 'Happy Monkey', cursive;
+  font-size: 35px;
+  color: white;
+  padding-bottom: 20px;
+}
