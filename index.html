@@ -39,7 +39,7 @@
                     <div class="input-group-prepend">
                         <span class="input-group-text" id="basic-addon1"><i class="fa fa-search" aria-hidden="true"></i></span>
                     </div>
-                    <input type="text" class="form-control" placeholder="¿Qué tipo de comida buscas?" aria-label="Username" aria-describedby="basic-addon1">
+                    <input id="input-filter" type="text" class="form-control" placeholder="¿Qué tipo de comida buscas?" aria-label="Username" aria-describedby="basic-addon1">
                 </div>
             </div>
         </div>
@@ -56,7 +56,7 @@
     <!--Restaurantes-->
     <!--Ejemplo de la estructura para esta sección-->
 
-    <section class="container-fluid">
+    <section class="container-fluid" id="publish-restaurants">
         <div class="row justify-content-center restaurant">
             <div class="col-6">
                 <img src="assets/images/galera.jpg" alt="galera">
@@ -68,11 +68,35 @@
         </div>
     </section>
 
+    <!--Estructura de modal-->
+    <section>
+        <div class="modal" tabindex="-1" role="dialog">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <img src="assets/images/galera.jpg" alt="galera">
+                        <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <h3>Comida española</h3>
+                    </div>
+                    <div class="modal-footer">
+                        <p>Dirección : 'Av. 20 de Noviembre, Col. 25 de Julio'</p>
+                        <p>Teléfono : 55270737</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
 
     <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="js/app.js"></script>
 </body>
 
 </html>
