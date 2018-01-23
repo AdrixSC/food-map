@@ -20,11 +20,11 @@ var loadPage = function() {
 };*/
 
 var paintLogo = function(restaurantsIndice) {
-  /*Llamando elementos que se van a utilizar para crear elemento img*/
+    /*Llamando elementos que se van a utilizar para crear elemento img*/
 
     /* Crear elementos con DOM html al publicar restaurante */
-    var $containerImg = $("<div />", { "class": "col-6"});
-    var $imgLogo = $("<img />", { "src": restaurantsIndice.photo});
+    var $containerImg = $("<div />", { "class": "col-6" });
+    var $imgLogo = $("<img />", { "src": restaurantsIndice.photo });
 
     console.log($imgLogo);
 
@@ -44,9 +44,9 @@ var filter = function() {
     //Esta funcion debe de filtrar la data segun el valor que el usuario ingrese en el input de busqueda
     var inputFilter = $("#input-filter").val().toLowerCase();
     if ($("#input-filter").val().trim().length > 0) {
-      for (var i = 0; i > restaurants.length; i++) {
-        var restaurantsIndice = restaurants[i];
-      }
+        for (var i = 0; i > restaurants.length; i++) {
+            var restaurantsIndice = restaurants[i];
+        }
         var filtederedRestaurants = restaurants.filter(function(restaurantsIndice) {
             return restaurantsIndice.foodType.toLowerCase().indexOf(inputFilter) >= 0;
         })
@@ -56,7 +56,7 @@ var filter = function() {
         });
     } else {
         $("#publish-restaurants").empty();
-        filtederedRestaurants.forEach(function(restaurantsIndice) {
+        restaurants.forEach(function(restaurantsIndice) {
             paintLogo(restaurantsIndice);
         });
     }
