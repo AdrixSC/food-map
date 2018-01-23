@@ -5,19 +5,8 @@ var $inputFilter = $("#input-filter");
 var loadPage = function() {
     $("#input-filter").keyup(filter);
     paintLogo(restaurantsIndice);
-    //$inputFilter.keyup(validateRestaurant);
     //$(".modal").modal();
 };
-
-/*var validateRestaurant = function() {
-    //En esta funcion tenemos que validar que el usuario ingrese datos y no valores vacios
-
-    if ($(this).val().trim().length > 0) {
-        $("#input-filter").removeAttr("disabled");
-    } else {
-        $("#input-filter").attr("disabled", true);
-    }
-};*/
 
 var paintLogo = function(restaurantsIndice) {
     /*Llamando elementos que se van a utilizar para crear elemento img*/
@@ -26,13 +15,7 @@ var paintLogo = function(restaurantsIndice) {
     var $containerImg = $("<div />", { "class": "col-6" });
     var $imgLogo = $("<img />", { "src": restaurantsIndice.photo });
 
-    console.log($imgLogo);
-
-    //Asignando atributos y/o eventos
-    //$imgLogo.click(openModal);
-
-    /* Asignando valores a los elementos*/
-    $imgLogo.append(restaurantsIndice.photo);
+    //console.log($imgLogo);
 
     //Agregamos lo que creamos con el DOM a un elemento existente del HTML
     $containerImg.append($imgLogo);
