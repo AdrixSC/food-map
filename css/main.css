@@ -3,15 +3,16 @@
 .background-splash {
     background-color: #470966;
     height: auto;
-    width: 100%;
 }
 
 .logo-splash {
     color: #fc7005;
     font-family: 'Lilita One', cursive;
-    font-size: 60px;
+    font-size: 80px;
     padding-top: 100px;
     padding-bottom: 100px;
+    text-align: center;
+    width: 100%;
 }
 
 
