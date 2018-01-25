@@ -13,7 +13,7 @@ var paintLogo = function(restaurantsIndice) {
 
     /* Crear elementos con DOM html al publicar restaurante */
     var $containerImg = $("<div />", { "class": "col-6" });
-    var $imgLogo = $("<img />", { "src": restaurantsIndice.photo });
+    var $imgLogo = $("<img />", { "src": restaurantsIndice.photo, "href": "modal" });
 
     //console.log($imgLogo);
 
@@ -45,5 +45,10 @@ var filter = function() {
     }
     //console.log("filter", filtederedRestaurants)
 };
+
+var modal = function() {
+    $imgLogo.click()
+
+}
 
 $(document).ready(loadPage);
